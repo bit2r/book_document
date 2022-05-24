@@ -3,10 +3,8 @@ title: "문서제작의 모든 것"
 author: "한국 알(R) 사용자회"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: 
-  bookdown::gitbook:
-    includes:
-      after_body: footer.html
+google_analytics: "UA-229551680-1"
+output: bookdown::gitbook
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
@@ -14,6 +12,18 @@ link-citations: yes
 github-repo: bit2r/book_document
 description: "문서제작의 모든 것"
 ---
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-229551680-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-229551680-1');
+</script>
+</head>
 
 # Prerequisites
 
